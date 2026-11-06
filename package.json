@@ -1,0 +1,48 @@
+{
+  "name": "brochelink",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BrocheLink — plataforma de QR Codes dinâmicos para broches físicos",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:db": "vitest run tests/db",
+    "secrets": "node scripts/generate-secrets.mjs"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^7.0.3",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.119.0",
+    "jszip": "^3.10.2",
+    "lucide-react": "^1.70.0",
+    "next": "^16.4.5",
+    "pdf-lib": "^1.17.1",
+    "qrcode": "^1.5.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-hook-form": "^7.91.0",
+    "server-only": "^0.0.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.15",
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/node": "^22.20.5",
+    "@types/qrcode": "^1.5.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.5",
+    "tailwindcss": "^4.3.5",
+    "typescript": "5.9",
+    "vitest": "^5.1.0"
+  }
+}
